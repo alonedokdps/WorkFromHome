@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kate</title>
+  </head>
+  <body class="body">
+    <div class="hero">
+      <nav>
+        <img src="Assets/logo.png" alt="" />
+        <ul>
+          <li>Home</li>
+          <li>Contact</li>
+          <li>Product</li>
+          <li>About</li>
+          <li><img src="Assets/moon.png" alt="" id="icon" /></li>
+        </ul>
+      </nav>
+      <div class="info">
+        <div class="left">
+          <h2><span style="color: red">Marvel</span> Studio</h2>
+          <p>NEW ON MARVEL UNLIMITED</p>
+          <button>GET MARVEL UNLIMITED</button>
+        </div>
+        <div class="right">
+          <img src="Assets/download.png" alt="" />
+        </div>
+      </div>
+    </div>
+    <script>
+      var icon = document.getElementById("icon");
+      icon.onclick = function () {
+        document.body.classList.toggle("dark-theme");
+        if (document.body.classList.contains("dark-theme")) {
+          icon.src = "Assets/sun.png";
+        } else {
+          icon.src = "Assets/moon.png";
+        }
+      };
+    </script>
+  </body>
+</html>

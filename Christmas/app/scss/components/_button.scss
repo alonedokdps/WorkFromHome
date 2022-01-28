@@ -1,0 +1,47 @@
+@use "../abstract/" as *;
+button {
+  outline: 0;
+  border: 0;
+  white-space: nowrap;
+  cursor: pointer;
+}
+.btn {
+  text-transform: uppercase;
+  padding: 1rem 4rem;
+  font-size: x-large;
+  background-color: $main-color;
+  color: $white;
+  border-radius: $border-radius;
+  position: relative;
+  transition: background-color 0.3s ease;
+  &:hover {
+    background-color: $main-color-hover;
+  }
+  &.sm {
+    font-size: medium;
+    padding: 0.5rem 2rem;
+    font-weight: 500;
+  }
+  &.snow {
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+      height: 100%;
+      width: 100px;
+    }
+    &::before {
+      top: -40px;
+      left: 0;
+      background-image: url("../../../assets/snow-1.png");
+    }
+    &::after {
+      top: -50px;
+      right: 0;
+      background-image: url("../../../assets/snow-2.png");
+    }
+  }
+}
