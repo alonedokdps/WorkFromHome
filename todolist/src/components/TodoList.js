@@ -20,6 +20,7 @@ function TodoList() {
   const removeTodo = (id) => {
     const removeArr = [...todos].filter((todo) => todo.id !== id);
     setTodos(removeArr);
+    toast.info("deleted!");
     // console.log("check arr remove", removeArr);
   };
   const updateTodo = (todoId, newValue) => {
@@ -29,6 +30,7 @@ function TodoList() {
     setTodos((prev) =>
       prev.map((item) => (item.id === todoId ? newValue : item))
     );
+    toast.success("updated!");
   };
   const completeTodo = (id) => {
     let updatedTodos = todos.map((todo) => {
@@ -38,6 +40,8 @@ function TodoList() {
       return todo;
     });
     setTodos(updatedTodos);
+
+    toast.success("completed !");
   };
   console.log("test complete", todos);
   return (
