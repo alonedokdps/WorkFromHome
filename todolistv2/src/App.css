@@ -1,0 +1,23 @@
+.app {
+  display: flex;
+  justify-content: center;
+}
+h3 {
+  text-align: center;
+}
+input {
+  width: 300px;
+  padding: 10px 20px;
+  outline: none;
+  border: 3px solid #68d391;
+}
+button {
+  padding: 10px 20px;
+  border-left: none;
+  background-color: #68d391;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  outline: none;
+  border: 3px solid #68d391;
+}

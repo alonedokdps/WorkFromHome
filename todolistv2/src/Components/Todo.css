@@ -1,0 +1,15 @@
+.text {
+  padding: 10px 15px;
+  background-color: #eee;
+  border-bottom: 3px solid #fff;
+}
+.text:hover {
+}
+.text.active {
+  text-decoration: line-through;
+}
+.text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
