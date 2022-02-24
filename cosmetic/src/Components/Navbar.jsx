@@ -33,7 +33,7 @@ const Navbar = () => {
     <nav className={change ? "nav-bar active" : "nav-bar"}>
       <Link>
         <div className="logo">
-          <h1>COSDNA</h1>
+          <h1>MAKEUP API</h1>
         </div>
       </Link>
       <div className="menu-icon" onClick={() => setMenu(!menu)}>
