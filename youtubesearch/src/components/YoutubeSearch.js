@@ -1,16 +1,23 @@
 import React, {useState} from "react";
 import axios from "axios";
 import "./youtubesearch.scss";
+import {AiFillYoutube} from "react-icons/ai";
 const YoutubeSearch = () => {
   const [query, setQuery] = useState("");
   const [videos, setVideos] = useState([]);
+  const [search, setSearch] = useState([]);
+  const handleOnSearch = (e) => {
+    const query = e.target.value;
+
+    setQuery(query);
+  };
   const handleYoutubeSearch = async () => {
     let res = await axios({
       method: "GET",
       url: "https://www.googleapis.com/youtube/v3/search",
       params: {
         part: "snippet",
-        maxResults: "20",
+        maxResults: "100",
         key: "AIzaSyDMTz5D60a_CI1vSfDRJlCT_YC5if5QkH8",
         q: query,
       },
@@ -18,6 +25,7 @@ const YoutubeSearch = () => {
     if (res && res.data && res.data.items) {
       let raw = res.data.items;
       let result = [];
+      console.log(raw);
       if (raw && raw.length > 0) {
         raw.map((item) => {
           let object = {};
@@ -31,17 +39,14 @@ const YoutubeSearch = () => {
       }
       setVideos(result);
     }
-    console.log(res);
   };
   return (
     <div className="youtube-search-container">
-      <h1>Youtube minisize</h1>
+      <h1>
+        Youtube <AiFillYoutube style={{color: "red  "}} />
+      </h1>
       <div className="search" placeholder="hay tim kiem video">
-        <input
-          type="text"
-          value={query}
-          onChange={(e) => setQuery(e.target.value)}
-        />
+        <input type="text" value={query} onChange={handleOnSearch} />
         <button onClick={handleYoutubeSearch}>Search</button>
       </div>
       {videos &&

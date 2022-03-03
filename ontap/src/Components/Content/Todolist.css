@@ -1,0 +1,15 @@
+.form {
+  background-color: red;
+  justify-content: center;
+  display: flex;
+}
+.text-input {
+  width: 500px;
+}
+.text-input input {
+  width: calc(100% - 70px);
+  padding: 15px 20px;
+}
+.text-input button {
+  padding: 15px 20px;
+}

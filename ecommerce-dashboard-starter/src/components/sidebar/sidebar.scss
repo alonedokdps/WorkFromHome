@@ -1,0 +1,51 @@
+@use "../../scss/abstracts/" as *;
+@use "sass:math";
+
+.sidebar {
+  @include flex(stretch, flex-start);
+  flex-direction: column;
+  color: $txtColor;
+  width: $sideBarWidth;
+  background-color: $mainBg;
+  height: 100vh;
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  &__logo {
+    @include flex();
+    img {
+      --size: 55px;
+      width: var(--size);
+      height: var(--size);
+    }
+    .sidebar-close {
+      cursor: pointer;
+      display: none;
+      i {
+        font-size: 2rem;
+      }
+      @include tablet {
+        display: block;
+      }
+    }
+  }
+  &__menu {
+    @include flex(stretch, flex-start);
+    flex-direction: column;
+    flex-grow: 1;
+    &__item {
+      @include flex(center, flex-start);
+      position: relative;
+      margin-bottom: 2rem;
+      padding-left: 20%;
+      transition: color 0.3s ease-in-out;
+      &:hover {
+        color: $mainColor;
+      }
+      &.active {
+        font-weight: 700;
+        color: $mainColor;
+      }
+    }
+  }
+}
