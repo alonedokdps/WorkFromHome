@@ -1,0 +1,42 @@
+.container {
+  width: 500px;
+  padding: 20px;
+  margin: 0 auto;
+  border-radius: 1rem;
+}
+h3 {
+  font-size: 4.5rem;
+  margin-bottom: 20px;
+  text-transform: capitalize;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 1px;
+}
+.form-input {
+  width: 100%;
+
+  display: flex;
+  justify-content: content;
+}
+.form-input .input {
+  padding: 10px 15px;
+  width: 100%;
+  outline: none;
+  color: black;
+  border: none;
+}
+.btn {
+  padding: 10px 15px;
+  outline: none;
+  cursor: pointer;
+  border: none;
+  background-color: #e74c3c;
+}
+.todo {
+  text-align: left;
+}
+.input.active {
+  border: 3px solid red;
+}
+.btn.active {
+  border: 3px solid red;
+}
