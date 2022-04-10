@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  border: 0;
+  outline: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all 0.3 ease;
+  scroll-behavior: smooth;
+}
+.section {
+  max-width: 1440px;
+  padding: 20px 0;
+  margin: 30px auto;
+}
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+  color: unset;
+}
+.text-white {
+  color: white;
+}
+.text-black {
+  color: black;
+}
+.title {
+  padding: 20px;
+  margin-bottom: 20px;
+}
+.section .title h3 {
+  text-align: center;
+  font-size: 2rem;
+}
+.title h3 > span {
+  color: #007aff;
+}
+.col-4 {
+  width: 25%;
+}
+.col-3 {
+  width: 33.33%;
+}

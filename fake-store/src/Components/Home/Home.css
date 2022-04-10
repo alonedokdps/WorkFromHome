@@ -1,0 +1,18 @@
+.image-slide {
+  width: 100%;
+  text-align: center;
+}
+img {
+  height: 300px;
+}
+.title {
+  padding: 20px;
+  margin-bottom: 20px;
+}
+.section .title h3 {
+  text-align: center;
+  font-size: 2rem;
+}
+.title h3 > span {
+  color: #007aff;
+}

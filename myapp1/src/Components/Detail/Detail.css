@@ -1,0 +1,84 @@
+.details {
+  display: flex;
+  justify-content: center;
+
+  width: 100%;
+}
+.details .img-container img {
+  width: 400px;
+  height: 400px;
+  transition: all 0.3s ease;
+}
+.details .img-container:hover img {
+  transform: scale(-1);
+}
+h1,
+p,
+span,
+button {
+  margin: 10px;
+}
+.colors,
+.sizes {
+  display: flex;
+  margin-bottom: 10px;
+  color: white;
+}
+.colors button {
+  color: white;
+  padding: 10px;
+  border: none;
+  margin-right: 10px;
+  outline: none;
+}
+.sizes button {
+  color: white;
+  padding: 10px;
+  border: none;
+  margin-right: 10px;
+  outline: none;
+  background-color: #1480e6;
+}
+.thumb {
+  display: flex;
+}
+.thumb img {
+  width: 70px;
+  margin: 10px;
+  cursor: pointer;
+}
+.detail-product {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.btn {
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 700;
+}
+@media (min-width: 481px) and (max-width: 767px) {
+  .details {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+
+    width: 100%;
+  }
+  .img-container {
+    text-align: center;
+  }
+  h1,
+  p,
+  span,
+  button {
+    margin: 0;
+  }
+  .thumb img {
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    cursor: pointer;
+  }
+}

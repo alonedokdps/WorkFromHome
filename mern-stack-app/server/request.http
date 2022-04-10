@@ -1,0 +1,6 @@
+POST http://localhost:5000/api/post HTTP/1.1
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MjQ2YjU5NDJkOWIwNTY1ZTE3MWIzMDgiLCJpYXQiOjE2NDg4MDE1Mjl9.mRcJwsy_sLs4lqEUGt_zoQ9O_zGgF4dCMRiBJMsQn9I
+{
+    "title": "anc"
+}

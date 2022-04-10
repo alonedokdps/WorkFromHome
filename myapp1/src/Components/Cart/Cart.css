@@ -1,0 +1,61 @@
+.cart {
+  width: 100%;
+}
+table {
+  width: 100%;
+
+  text-align: center;
+}
+.cart-product .img-cart img {
+  width: 120px;
+  height: 120px;
+}
+.cart-product {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.info-cart-product {
+  margin: 0 auto;
+}
+table thead tr th {
+  font-size: 1.5rem;
+  padding: 20px;
+}
+table tbody tr td {
+  font-size: 1.3rem;
+  padding: 20px;
+}
+h3 {
+  font-weight: 500;
+}
+button {
+  padding: 10px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border: 1px solid #1480e6;
+  background-color: #fff;
+  color: #1480e6;
+}
+table {
+  border: 1px solid #1480e6;
+}
+td ion-icon {
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+.total {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  padding: 10px 84px;
+  color: #fff;
+  text-align: right;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  font-size: 2rem;
+  background-color: #1480e6;
+}
