@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer base {
+  body {
+    @apply bg-slate-900 font-body px-5 text-white scroll-smooth;
+  }
+}
+@layer components {
+  .page-container {
+    max-width: 1280px;
+    @apply mx-auto;
+  }
+  .movie-list .swiper-slide {
+    width: 300px;
+    height: auto;
+  }
+  .banner .swiper {
+    width: 100%;
+  }
+  .pagination {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: center;
+    .selected {
+      @apply text-primary;
+    }
+    li {
+      color: black;
+      a {
+        display: flex !important;
+        align-items: center;
+        gap: 20px;
+
+        justify-content: center;
+        @apply bg-white p-2 rounded-md;
+      }
+    }
+  }
+}
